@@ -1,5 +1,7 @@
 <?php
 
+namespace Muammertopcu\PHPonvif;
+
 /**
 
  * @author Lorenzo Toscano <lorenzo.toscano@gmail.com>
@@ -26,7 +28,7 @@
  
 **/
 
-class Ponvif {
+class PHPonvif {
 
 	/*
 		$ipaddress 	ip address of the NVT device
