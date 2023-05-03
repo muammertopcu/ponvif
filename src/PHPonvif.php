@@ -2,6 +2,9 @@
 
 namespace Muammertopcu\PHPonvif;
 
+use SimpleXMLElement;
+use DOMDocument;
+
 /**
 
  * @author Lorenzo Toscano <lorenzo.toscano@gmail.com>
