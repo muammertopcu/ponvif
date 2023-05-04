@@ -429,7 +429,6 @@ class PHPonvif
 	public function media_GetSnapshotUri($profileToken)
 	{
 		$REQ = $this->_makeToken();
-		dd($REQ);
 		$post_string = '
             <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
                 <s:Header>
@@ -454,7 +453,6 @@ class PHPonvif
 				$REQ['TIMESTAMP'],
 				$profileToken),
 			$post_string);
-		dd($post_string);
 		if ($this->isFault($response = $this->_send_request($this->mediauri, $post_string))) {
 			if ($this->intransingent) throw new \Exception('GetSnapshotUri: Communication error');
 			var_dump($response);
