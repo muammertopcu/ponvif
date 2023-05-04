@@ -1051,8 +1051,8 @@ class PHPonvif
 		if ($timestamp == 'default') $timestamp = date('Y-m-d\TH:i:s.000\Z');
 		if ($nonce == 'default') $nonce = mt_rand();
 		$REQ = array();
-		// $passdigest = base64_encode(pack('H*', sha1(pack('H*', $nonce) . pack('a*', $timestamp) . pack('a*', $password))));
-		$passdigest=base64_encode(sha1($nonce.$timestamp.$password,true)); // alternative
+		$passdigest = base64_encode(pack('H*', sha1(pack('H*', $nonce) . pack('a*', $timestamp) . pack('a*', $password))));
+		//$passdigest=base64_encode(sha1($nonce.$timestamp.$password,true)); // alternative
 		$REQ['USERNAME'] = $username;
 		$REQ['PASSDIGEST'] = $passdigest;
 		$REQ['NONCE'] = base64_encode(pack('H*', $nonce));
