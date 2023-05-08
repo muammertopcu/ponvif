@@ -1,6 +1,15 @@
 {
     "name": "muammertopcu/php-onvif",
     "description": "PHP Onvif library to connect with Onvif devices",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Muammer Topcu",
+            "email": "muammertop@outlook.com",
+            "homepage": "https://github.com/muammertopcu",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Muammertopcu\\PHPonvif\\": "src/"
